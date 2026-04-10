@@ -1,4 +1,4 @@
-WITH "MeanIncome" AS (
+nWITH "MeanIncome" AS (
 SELECT "workInfo"."EmployeeNumber", "workInfo"."Attrition", "Department", "MonthlyIncome", 
   AVG("MonthlyIncome") OVER(
     PARTITION BY "Department"
